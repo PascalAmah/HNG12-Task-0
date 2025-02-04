@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f0f2f5;
+  padding: 1rem;
+}
+
+.card-container {
+  position: relative;
+  padding-top: 40px;
+}
+
+.hanging-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #0ea5e9; /* Changed to a tech-friendly blue */
+  border-radius: 50%;
+}
+
+.dotted-line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  border-left: 4px dashed #e0e0e0;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0.5rem 0 0;
+  text-align: center;
+}
+
+.job-title {
+  color: #718096;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 280px;
+  line-height: 1.4;
+}
+
+.bio {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f7fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a5568;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.contact-button:hover {
+  background: #0ea5e9; /* Changed to match dot color */
+  color: white;
+}
+
+.info-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.info-item i {
+  color: #0ea5e9;
+  width: 16px;
+  text-align: center;
+}
+
+.utc-time {
+  font-size: 0.8rem;
+  color: #718096;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+}
