@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     document.querySelector(".loader").classList.add("fade-out");
     document.querySelector(".card-container").classList.add("show");
-  }, 1000);
+  }, 2000);
 });
 
 // Update UTC time
