@@ -14,65 +14,75 @@
     <title>Developer Profile Card</title>
   </head>
   <body>
+    <div class="loader">
+      <div class="loader-spinner"></div>
+    </div>
+
     <div class="card-container">
       <div class="hanging-dot"></div>
       <div class="dotted-line"></div>
       <div class="card">
-        <img
-          data-testid="profilePicture"
-          class="profile-image"
-          src="pascal.jpg"
-          alt="Profile Picture"
-        />
-        <h1 data-testid="fullName" class="name">Pascal Machn</h1>
-        <h2 data-testid="jobTitle" class="job-title">Front-End Developer</h2>
-
-        <p data-testid="shortBio" class="bio">
-          Front-End Developer with over 2+ years of experience designing and
-          developing scalable web applications. Passionate about writing clean,
-          efficient code and mentoring junior developers to help them grow.
-          Enthusiastic about exploring new technologies, contributing to
-          open-source projects, and staying updated with industry trends.
-          Proficient in modern JavaScript frameworks, cloud technologies, and
-          agile development practices.
-        </p>
-
-        <div class="info-section">
-          <div data-testid="currentLocation" class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Lagos, Nigeria</span>
-          </div>
-          <div data-testid="emailAddress" class="info-item">
-            <i class="fas fa-envelope"></i>
-            <span>pascal.amah10@gmail.com</span>
-          </div>
+        <div class="profile-section">
+          <img
+            data-testid="profilePicture"
+            class="profile-image"
+            src="pascal.jpg"
+            alt="Profile Picture"
+          />
         </div>
-
-        <div data-testid="socialLinks" class="contact-info">
-          <a
-            href="https://github.com/PascalAmah"
-            class="contact-button"
-            aria-label="GitHub"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/pascal-amaliri/"
-            class="contact-button"
-            aria-label="LinkedIn"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a
-            href="https://x.com/chisax_"
-            class="contact-button"
-            aria-label="Twitter"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </div>
-
-        <div data-testid="currentTimeUTC" class="utc-time">
-          Last updated: <span id="utc-time"></span>
+        <div class="content-section">
+          <h1 data-testid="fullName" class="name">Pascal Machn</h1>
+          <h2 data-testid="jobTitle" class="job-title">Front-End Developer</h2>
+          <p data-testid="shortBio" class="bio">
+            Front-End Developer with over 2+ years of experience designing and
+            developing scalable web applications. Passionate about writing
+            clean, efficient code and mentoring junior developers to help them
+            grow. Enthusiastic about exploring new technologies, contributing to
+            open-source projects, and staying updated with industry trends.
+          </p>
+          <div class="info-section">
+            <div data-testid="currentLocation" class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Lagos, Nigeria</span>
+            </div>
+            <div data-testid="emailAddress" class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span id="email">pascal.amah10@gmail.com</span>
+              <div class="tooltip">Click to Copy</div>
+            </div>
+          </div>
+          <div data-testid="socialLinks" class="contact-info">
+            <a
+              href="https://github.com/PascalAmah"
+              class="contact-button"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pascal-amaliri/"
+              class="contact-button"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://x.com/chisax_"
+              class="contact-button"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div data-testid="currentTimeUTC" class="utc-time">
+            Last updated: <span id="utc-time"></span>
+          </div>
         </div>
       </div>
     </div>
